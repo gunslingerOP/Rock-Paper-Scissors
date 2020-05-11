@@ -32,6 +32,7 @@ body #controls{
     position: absolute;
     display: block;
     width: 140px;
+    box-shadow: 0 0 10px #188ae7;
 
     text-align: center;
     box-sizing: content-box;
@@ -49,6 +50,7 @@ body #controls{
     left:1071px;
     height: 143px;
     width: 148px;
+    box-shadow: 0 0 10px #188ae7;
 
     top:445px;
     border: 4px solid blue;
@@ -62,6 +64,8 @@ body #controls{
     right:1044px;
     width: 147px;
     height: 143px;
+    box-shadow: 0 0 10px #188ae7;
+
     top:445px;
     border: 4px solid blue;
 }
@@ -74,6 +78,8 @@ body #controls{
     top:162px;
     height: 95px;
     left:856px;
+    box-shadow: 0 0 10px #188ae7;
+
     text-align: center;
     width: 170px;
 }
@@ -86,6 +92,8 @@ body #controls{
     border: 4px solid blue;
     left:1071px;
     top: 300px;
+    box-shadow: 0 0 10px #188ae7;
+
     padding: 20px;
     width: 140px;
     height: 100px;
@@ -102,6 +110,8 @@ body #controls{
     width: 172px;
     padding: 20px;
     height: 100px;
+    box-shadow: 0 0 10px #188ae7;
+
 }
 #container{
 text-align: center;
@@ -110,6 +120,8 @@ position: absolute;
 box-sizing: border-box;
 border: 4px solid blue;
 width: min-content;
+box-shadow: 0 0 10px #188ae7;
+
 left: 45%;
 }
 #reset{
