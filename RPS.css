@@ -1,0 +1,194 @@
+body{
+background-color:#06010E;
+position: relative;
+color: turquoise;
+font-family: "Bad Script", cursive;
+}
+#title{
+    position: absolute;
+    display: flex;
+    top:20px;
+    left: 42%;
+    margin: 0;
+    padding: 0;
+}
+h1 span{
+   animation: glow 1s ease-in-out infinite alternate;
+   
+
+}
+        
+body #controls{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    right: 0%;
+    top: 400%;
+
+    bottom: 0px;
+}
+#yourscore{
+    position: absolute;
+    display: block;
+    width: 140px;
+    box-shadow: 0 0 10px #188ae7;
+
+    text-align: center;
+    box-sizing: content-box;
+    border: 4px solid blue;
+    left:673px;
+    top: 300px;
+    padding: 20px;
+    height: 100px;
+}
+#computerchoice{
+    position: absolute;
+    box-sizing: content-box;
+    padding: 16px;
+    text-align: center;
+    left:1071px;
+    height: 143px;
+    width: 148px;
+    box-shadow: 0 0 10px #188ae7;
+
+    top:445px;
+    border: 4px solid blue;
+
+}
+#yourchoice{
+    position: absolute;
+    box-sizing: content-box;
+    padding: 16px;
+    text-align: center;
+    right:1044px;
+    width: 147px;
+    height: 143px;
+    box-shadow: 0 0 10px #188ae7;
+
+    top:445px;
+    border: 4px solid blue;
+}
+#results{
+    position: absolute;
+    display: flexbox;
+    box-sizing: content-box;
+    border: 4px solid blue;
+    padding: 20px;
+    top:162px;
+    height: 95px;
+    left:856px;
+    box-shadow: 0 0 10px #188ae7;
+
+    text-align: center;
+    width: 170px;
+}
+
+#computerscore{
+    position: absolute;
+    display: block;
+    text-align: center;
+    box-sizing: content-box;
+    border: 4px solid blue;
+    left:1071px;
+    top: 300px;
+    box-shadow: 0 0 10px #188ae7;
+
+    padding: 20px;
+    width: 140px;
+    height: 100px;
+
+}
+#round-number{
+    position: absolute;
+    display: block;
+    text-align: center;
+    box-sizing: content-box;
+    border: 4px solid blue;
+    left:856px;
+    top: 625px;
+    width: 172px;
+    padding: 20px;
+    height: 100px;
+    box-shadow: 0 0 10px #188ae7;
+
+}
+#container{
+text-align: center;
+top:300px ;
+position: absolute;
+box-sizing: border-box;
+border: 4px solid blue;
+width: min-content;
+box-shadow: 0 0 10px #188ae7;
+
+left: 45%;
+}
+#reset{
+    display: block;
+margin: 20px auto;
+}
+.bt{
+background-color: transparent;
+width: 170px;
+height: 40px;
+
+margin: 20px;
+border: 4px solid turquoise;
+font-weight: 700;
+color: turquoise;
+cursor: pointer;
+font-size: 16px;
+position: relative;
+}
+
+.bt::before, .bt::after{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background-color: #06010E ;
+    
+    transition: .17s linear;
+    animation-iteration-count: infinite;
+}
+
+.bt::before{
+    top:-4px;
+    left: 10%;
+}
+
+.bt::after{
+    bottom:-4px;
+    right:10%;
+    
+}
+.bt:hover::before{
+    left: 80%;
+    background-color:  turquoise;
+}
+.bt:hover{
+    color: #06010E;
+    border: 4px solid #06010E;
+
+    background-color: turquoise; box-shadow: 0 0 18px turquoise;
+}
+.bt:hover::after{
+    right: 80%;
+    background-color: turquoise;
+
+    
+}
+@keyframes greenPulse {
+    from { background-color: #749a02; box-shadow: 0 0 9px #333; }
+    50% { background-color: #91bd09; box-shadow: 0 0 18px #91bd09; }
+    to { background-color: #749a02;  box-shadow: 0 0 0 0px #333; }
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
