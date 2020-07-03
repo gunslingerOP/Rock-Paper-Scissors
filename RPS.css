@@ -8,7 +8,7 @@ font-family: "Bad Script", cursive;
     position: absolute;
     display: flex;
     top:20px;
-    left: 43.4%;
+    left: 43.6%;
     margin: 0;
     padding: 0;
 }
@@ -131,7 +131,7 @@ margin: 20px auto;
 #trib{
     position: absolute;
     bottom: -880px;
-    left:780px;
+    left:42%;
     font-weight: 300;
     font-size:20px;
     animation: glow 1s ease-in-out infinite alternate;
