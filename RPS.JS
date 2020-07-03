@@ -51,9 +51,9 @@ else
 
 
 }
-let round=0 
+let roun=0 
 function round_no(){
- round+=1
+ roun+=1
     document.getElementById("round").textContent = round
 
 }
