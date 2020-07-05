@@ -42,6 +42,10 @@ grid-row: 5/5;
     font-weight: 400;
     font-size: 150%;
 }
+#result{
+    font-weight: 400;
+    font-size: 150%;
+}
 #computerchoice{
     width: 60%;
 
