@@ -2,152 +2,163 @@ body{
 background-color:#06010E;
 position: relative;
 color: turquoise;
+height: fit-content;
 font-family: "Bad Script", cursive;
 }
 #title{
-    position: absolute;
-    display: flex;
-    top:20px;
-    left: 43.6%;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    display: grid;
+    
+    margin: 0 auto;
+    padding: 1%;
+    grid-area: title;
 }
 h1 span{
    animation: glow 1s ease-in-out infinite alternate;
    
 
 }
-        
-body #controls{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0%;
-    right: 0%;
-    top: 400%;
 
-    bottom: 0px;
-}
 #yourscore{
-    position: absolute;
-    display: block;
-    width: 140px;
+    
     box-shadow: 0 0 10px #188ae7;
-
+position: relative;
     text-align: center;
+    display: grid;
+    width: 60%;
+    justify-self: end;  
     box-sizing: content-box;
     border: 4px solid blue;
-    left:673px;
-    top: 300px;
-    padding: 20px;
-    height: 100px;
+    grid-area: yourscore;
+    grid-column: 1/2;
+grid-row: 5/5;
+    
+}
+#dem{
+    font-weight: 400;
+    font-size: 150%;
+}
+#player{
+    font-weight: 400;
+    font-size: 150%;
 }
 #computerchoice{
-    position: absolute;
-    box-sizing: content-box;
-    padding: 16px;
-    text-align: center;
-    left:1071px;
-    height: 143px;
-    width: 148px;
-    box-shadow: 0 0 10px #188ae7;
+    width: 60%;
 
-    top:445px;
+    box-sizing: content-box;
+    position: relative;
+    box-shadow: 0 0 10px #188ae7;
+    display: grid;
+text-align: center;
     border: 4px solid blue;
+    grid-area: computerchoice;
+    grid-column: 3/3;
+grid-row: 3/5;
 
 }
 #yourchoice{
-    position: absolute;
-    box-sizing: content-box;
-    padding: 16px;
-    text-align: center;
-    right:1044px;
-    width: 147px;
-    height: 143px;
+width: 60%;
+justify-self: end;   
     box-shadow: 0 0 10px #188ae7;
-
-    top:445px;
+position: relative;
+display: grid;
+    text-align: center;
+    box-sizing: content-box;
     border: 4px solid blue;
+    grid-area: yourchoice;
+    grid-column: 1/2;
+    grid-row: 3/5;
+
 }
 #results{
-    position: absolute;
-    display: flexbox;
+
     box-sizing: content-box;
     border: 4px solid blue;
-    padding: 20px;
-    top:162px;
-    height: 95px;
-    left:856px;
+  position: relative;
+  display: grid;
+  width: 70%;
+justify-self: center;
     box-shadow: 0 0 10px #188ae7;
-
     text-align: center;
-    width: 170px;
+    grid-area: result;
+    grid-column: 2/3;
+grid-row: 2/3;
+
+    
 }
 
 #computerscore{
-    position: absolute;
-    display: block;
     text-align: center;
     box-sizing: content-box;
     border: 4px solid blue;
-    left:1071px;
-    top: 300px;
-    box-shadow: 0 0 10px #188ae7;
-
-    padding: 20px;
-    width: 140px;
-    height: 100px;
+    display: grid;
+    width: 60%;
+box-shadow: 0 0 10px #188ae7;
+grid-area: computerscore;
+position: relative;
+grid-column: 3/4;
+grid-row: 5/5;
 
 }
 #round-number{
-    position: absolute;
-    display: block;
     text-align: center;
     box-sizing: content-box;
     border: 4px solid blue;
-    left:856px;
-    top: 625px;
-    width: 172px;
-    padding: 20px;
-    height: 100px;
+    position: relative;
+justify-self: center;
     box-shadow: 0 0 10px #188ae7;
+    grid-area: roundno;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    display: grid;
+    width: 70%;
+
 
 }
 #container{
-text-align: center;
-top:300px ;
-position: absolute;
-box-sizing: border-box;
+    width: 70%;
+justify-self: center;
 border: 4px solid blue;
-width: min-content;
 box-shadow: 0 0 10px #188ae7;
+grid-area: controls;
+grid-column: 2/3;
+grid-row: 3/6;
+display: grid;
 
-left: 45%;
 }
-#reset{
-    display: block;
-margin: 20px auto;
+#grid{
+   display: grid;
+   grid-template-columns: 0.9fr 0fr 0.6fr ;
+   grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr 1fr 0.5fr ;
+   
+   
 }
+
+
 #trib{
-    position: absolute;
-    bottom: -880px;
-    left:42%;
+    margin-left: 0.5em;
+    bottom: 40vh;
     font-weight: 300;
     font-size:20px;
+    text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
-
+display: grid;
+grid-row: 7/7;
 }
 .bt{
+    
 background-color: transparent;
-width: 170px;
-height: 40px;
-
-margin: 20px;
+width: 70%;
+height: 5vh;
+display: block;
+margin: auto ;
 border: 4px solid turquoise;
-font-weight: 700;
+font-weight: 200;
 color: turquoise;
 cursor: pointer;
-font-size: 16px;
+font-size: 1.2em;
 position: relative;
 }
 
@@ -201,3 +212,35 @@ position: relative;
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
   }
+
+  @media screen and (max-width: 580px)
+  {
+    .bt{
+          width: 70%;
+          height: fit-content;
+          font-size: 75%;
+    }
+    #computerchoice{
+        padding-top: 10%;
+        width: 74%;
+    }
+   
+    #computerscore{
+        width: 75%;
+    }
+    #grid{
+        display: grid;
+        grid-template-columns: 0.6fr 0.6fr 0.6fr ;
+        grid-template-rows: 0.6fr 1fr 0.6fr 0.6fr 0.6fr 1fr 0.2fr ;
+        
+     }
+
+  }
+  @media screen and (min-width: 700px)
+{
+    #grid{
+        display: grid;
+        grid-template-columns: 0.3fr 0.3fr 0.3fr ;
+    justify-content: center;
+    }
+}
